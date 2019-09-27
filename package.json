@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-auth-back-end",
+  "version": "1.0.0",
+  "description": "A simple server side implementation of authentication system using Node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujithmp/nodejs-auth-back-end.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "authentication"
+  ],
+  "author": "astosixer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sujithmp/nodejs-auth-back-end/issues"
+  },
+  "homepage": "https://github.com/sujithmp/nodejs-auth-back-end#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "jsonwebtoken": "^8.5.1",
+    "sqlite3": "^4.1.0"
+  }
+}
