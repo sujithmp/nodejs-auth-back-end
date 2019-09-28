@@ -1,4 +1,8 @@
-/* Didnt get why they are using strict */
+/* 
+	Didnt get why they are using strict 
+   	Literal which specifies javascript to run in strict mode.
+   	Any sort of unsafe code , and its usage will cause error
+*/
 "use strict";
 
 /* 
@@ -10,6 +14,7 @@ class Db {
 
 	/* dont know which file they are refering */
 	constructor(file){
+		console.log("file",file);
 		this.db = new sqlite3.Database(file);
 		this.createTable();
 	}
@@ -34,7 +39,7 @@ class Db {
 		we can use methods like get,all
 	*/
 
-	selectByEamil(email,callback) {
+	selectByEmail(email,callback) {
 		return this.db.get(`SELECT * from   user where email=?`,[email] ,( err, row) => {
 			callback(err,row);
 
